@@ -1,15 +1,22 @@
 {
   "name": "zeroda-mcp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "MCP server that lets AI assistants trade and analyse a Zerodha Kite account: portfolio, quotes, orders, GTT.",
+  "main": "build/index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
     "dev": "nodemon",
     "start": "npm run build && node ./build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "zerodha",
+    "kite-connect",
+    "trading",
+    "ai-agent"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +28,8 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.13.0",
-    "kiteconnect": "^5.0.1"
+    "dotenv": "^16.6.1",
+    "kiteconnect": "^5.0.1",
+    "zod": "^3.25.76"
   }
 }
